@@ -17,10 +17,15 @@ body::-webkit-scrollbar {
 }
 
 /* profile pic */
-img{
+img {
     width: 100px !important;
     height: 100px !important;
 }
+
+/* contact */
+/* .contact {
+    letter-spacing: normal;
+} */
 
 /* navbar link underline aimation */
 .nav-link {
@@ -160,6 +165,7 @@ img{
 
 /* card */
 .card {
+    line-height: 35px !important;
     border-radius: 0 !important;
     background: linear-gradient(90deg, hsla(339, 100%, 55%, 1) 0%, hsla(197, 100%, 64%, 1) 100%);
 }
