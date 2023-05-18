@@ -41,3 +41,8 @@ $(".nav-link").on('click', function (e) {
     }, 1000);
 });
 
+// resume download
+$("#download").click(function (e) {
+    e.preventDefault();
+    window.location.href = "sathiyanathan_A_Resume.pdf";
+});
