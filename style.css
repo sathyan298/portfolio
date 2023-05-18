@@ -16,6 +16,12 @@ body::-webkit-scrollbar {
     display: none;
 }
 
+/* profile pic */
+img{
+    width: 100px !important;
+    height: 100px !important;
+}
+
 /* navbar link underline aimation */
 .nav-link {
     color: grey;
