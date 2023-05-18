@@ -5,6 +5,12 @@ $(document).ready(function () {
 
 });
 
+// close navbar after click
+document.querySelectorAll('.nav-link').forEach(link => {
+    link.addEventListener('click', () => {
+        $(".closebtn").click()
+    })
+})
 every();
 
 // side nav bar
