@@ -1,0 +1,199 @@
+/* google font */
+@import url('https://fonts.googleapis.com/css?family=Work+Sans');
+
+body {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 800;
+    background: #2980B9;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9);
+    color: #fff !important;
+    overflow-x: hidden !important;
+}
+
+/* hide scrollbar */
+body::-webkit-scrollbar {
+    display: none;
+}
+
+/* navbar link underline aimation */
+.nav-link {
+    color: grey;
+    text-transform: uppercase;
+    /* text-decoration: none; */
+    letter-spacing: 0.15em;
+    /* display: inline-block; */
+    padding: 15px 20px;
+    position: relative;
+    cursor: pointer;
+}
+
+.nav-link:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 10;
+    content: "";
+    display: block;
+    height: 3px;
+    left: 50%;
+    position: absolute;
+    background: #fff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+}
+
+.nav-link:hover:after {
+    width: 100%;
+    left: 0;
+}
+
+@media screen and (max-height: 300px) {
+    ul {
+        margin-top: 40px;
+    }
+}
+
+.container {
+    min-height: 720px;
+}
+
+/* typing txt */
+#intro {
+    font-family: 'Work Sans', sans-serif;
+    font-size: xx-large;
+    font-weight: bold;
+    color: black;
+    letter-spacing: 5px;
+}
+
+.typed-cursor {
+    visibility: hidden !important;
+}
+
+/* name text */
+.more-txt {
+    color: #f9bb16;
+}
+
+/* title */
+.title,
+#intro {
+    color: #123C69;
+}
+
+
+/* side navbar */
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #123C69;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+
+
+.openbtn {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 15px;
+    color: #ffffff;
+    display: block;
+    transition: 0.3s;
+    line-height: 50px;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 10px;
+    margin-left: 50px;
+    line-height: 50px;
+
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 10px;
+    }
+}
+
+/* open button */
+.bi-three-dots-vertical {
+    font-size: larger;
+    position: fixed;
+}
+
+/* close button */
+.bi-x-lg {
+    font-size: x-large;
+}
+
+/* down arrow */
+.go-down:hover {
+    color: #123C69 !important;
+    cursor: pointer;
+}
+
+/* card */
+.card {
+    border-radius: 0 !important;
+    background: linear-gradient(90deg, hsla(339, 100%, 55%, 1) 0%, hsla(197, 100%, 64%, 1) 100%);
+}
+
+/* course */
+.edu-detail {
+    line-height: 30px;
+}
+
+/* hypen */
+.hypen {
+    color: #f9bb16;
+}
+
+.works {
+    color: #003166 !important;
+}
+
+/* about me */
+.bottom {
+    min-height: 200px !important;
+}
+
+/* contact detail */
+.c-detail,
+.more {
+    text-decoration: solid;
+    cursor: pointer !important;
+}
+
+/* modal */
+.modal-content {
+    border-radius: 0 !important;
+}
+
+.modal-body {
+    line-height: 40px !important;
+}
+
+/* resume sownload */
+.resume {
+    cursor: pointer !important;
+}
