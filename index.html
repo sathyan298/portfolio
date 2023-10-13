@@ -39,6 +39,9 @@
                         <li class="nav-item">
                             <a class="nav-link under-line" href="#">About</a>
                         </li>
+                        <li class="nav-item d-block d-lg-none">
+                            <a class="nav-link under-line" href="#">about-this-site</a>
+                        </li>
                         <!-- <li class="nav-item">
                             <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
                         </li> -->
@@ -51,11 +54,15 @@
                             <a class="nav-link" href="#"><i class="fa-brands fa-linkedin-in pt-2 px-1 text-primary"></i></a>
                         </li> -->
                         <li class="nav-item  d-none d-lg-block">
-                            <a class="nav-link" href="#">
-                                <button onclick="downloadFile()" class="btn btn-sm bg-danger text-white fw-bold"> download cv
+                            <a class="nav-item">
+                                <a class="nav-link under-line" href="#">about-this-site</a>
+                            </a>
+                            <!-- <a class="nav-link" href="#">
+                                <button onclick="downloadFile()" class="btn btn-sm bg-danger text-white fw-bold">
+                                    download cv
                                     <i class="fa-solid fa-download pt-1 pr-3 text-white"></i>
                                 </button>
-                            </a>
+                            </a> -->
                         </li>
                         <!-- <li class="nav-item">
                             <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
@@ -66,41 +73,51 @@
         </nav>
 
         <!-- parent container -->
-        <div class="container-fluid bg-image">
+        <div class="container-fluid mt-5 mt-0-lg">
 
             <!-- home content -->
-            <div class="container pt-5 pt-0-lg">
+            <div class="container">
 
                 <div class="row vh-100">
                     <div
                         class="col-12 col-lg-8 order-1 order-lg-0 profile d-flex align-items-center text-center text-lg-start text-white fs-3">
-                        <div class="profile-content">
+                        <div>
                             <h2 class="name fw-bold">Hi, i'm sathiyanthan.</h2>
-                            <hh3 class="text-white">I'm <span class="type-text text-warning"></span></hh3>
-                            <h3></h3>
-                            front-end developer with 1.5 years experience, python full-stack developer.
-                            </h3>
-                            <div class="media mt-4 text-center text-start-lg">
-                                <button class="btn social btn-sm"><a href="https://wa.me/7339529459">
-                                    <i class="hover fa-brands fs-5 fa-whatsapp  text-success"></i></button>
+                            <h3 class="text-white">I'm <span class="type-text text-warning"></span></h3>
+                            <h5 class="profile-content">
+                                front-end developer with 1.5 years experience, python full-stack developer, <span
+                                    class="text-primary">always love to learn new things.</span><br> travel enthusiast,
+                                crciket, vollyball lover.
+                            </h5>
+                            <div class="social-media">
+                                <a class="hover fa-brands fs-5 fa-whatsapp  text-success bg-white px-2 py-2 rounded"
+                                    href="https://wa.me/7339529459">
                                 </a>
-                                <button class="btn social btn-sm">
-                                    <i class="hover fa-brands fs-5 fa-linkedin-in text-primary"></i></button>
-                                <button onclick="downloadFile()" class="btn btn-sm bg-danger text-white fw-bold ">Download CV
-                                    <i class="fa-solid fa-download pt-1 pr-3 text-white ms-2"></i></button>
+
+                                <a class="hover fa-brands fs-5 fa-linkedin-in  text-primary bg-white px-2 py-2 rounded"
+                                    href="">
+                                </a>
+
                             </div>
                         </div>
                     </div>
                     <div
                         class="col-12 col-lg-4 order-0 order-lg-1 profile d-flex justify-content-center align-items-center">
-                        <div class="img-container">
-                            <img src=".//src/PhotoRoom-20230911_003828-02-fococlipping-standard.png"
-                                class="img-thumbnail bg-transparent border-0 " alt="...">
+                        <div class="img-container my-image text-center">
+                            <img id="myImage" src=".//src/PhotoRoom-20230911_003828-02-fococlipping-standard.png"
+                                class=" bg-transparent border-0 " alt="...">
                         </div>
                     </div>
                 </div>
 
             </div>
+
+            <!-- Toggle Button -->
+            <div class="toggle-button" id="toggle-button" data-bs-toggle="tooltip" data-bs-placement="top" title="download CV">
+                <i onclick="downloadFile()"
+                    class="hover fa-solid fa-download bg-white px-2 py-2 rounded text-primary ms-2"></i>
+            </div>
+
 
         </div>
     </div>
@@ -219,6 +236,12 @@
         function downloadFile() {
             window.location.href = "sathiyanathan_CV.pdf";
         }
+
+
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl);
+        });
 
     </script>
 
