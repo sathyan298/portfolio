@@ -3,341 +3,224 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>my-portfolio</title>
-
-    <!-- bts5 css -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-
-    <!-- bts icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-
-    <!-- custom css path -->
-    <link rel="stylesheet" href="style.css">
-
+    <title>port-folio</title>
 </head>
+<link rel="stylesheet" href="./style.css">
 
+<!-- bts 5 cdn -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
+<body class="vh-100">
 
-<!-- body styles -->
+    <div id="particles-js"></div>
+    <div class="container-fluid">
 
-<body class="">
-
-    <div class="btn btn-sm bg-transparent rounded back-to-top me-4 mb-4"><i data-bs-toggle="tooltip" data-bs-placement="top" title="back to top" class="bi bi-mouse text-white fs-1"></i></div>
-
-    <!-- side navbar -->
-    <div class="row pe-3 pt-3">
-        <div class="col-md-12 text-end ">
-            <span class="openbtn pe-5" onclick="openNav()">
-                <i class="bi bi-three-dots-vertical text-success"></i></span>
-        </div>
-    </div>
-
-    <div id="mySidenav" class="sidenav sticky-top">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="bi bi-x-lg text-danger"></i></a>
-
-        <div class="profile-pic text-center my-4"><img src="profile.png" alt="profile" srcset=""></div>
-        <div class="nav-name text-center mb-5"><span class="fs-5">A. Sathiyanathan</span></div>
-
-        <a class="nav-link" href="#education">Education-Details</a>
-        <a class="nav-link" href="#experience">Experience</a>
-        <a class="nav-link" href="#skill">Skills</a>
-        <a class="nav-link" href="#work">My-Works</a>
-        <a class="nav-link contact" href="#resume">Contact & Resume</a>
-    </div>
-
-    <!-- side navbar end -->
-
-    <!-- part one -> profile part -->
-    <div class="container d-flex text-center flex-column justify-content-center align-items-center border-bottom">
-
-        <!-- text typing -->
-        <h1 class="text-center" id="intro"></h1>
-        <p class=" text-dark"></p>
-        <p class="more-txt">Have more than one year experience as Front-End developer (.Net Core), have well
-            knowledge in Python language and Django Framework.</p>
-        <p class=" text-dark"></p>
-        <p class=" text-dark">always love learn new things</p>
-        <p class=" text-dark">travel enthusiast, cricket & vollyball lover, PC games player</p>
-        <p class=" text-dark">like to develop web pages.</p>
-        <p class=" text-dark"></p>
-        <p class=" text-dark"></p>
-        <!-- <p class="text-dark"><i class="bi bi-arrow-down-square go-down fs-1 text-light"></i></p> -->
-
-        <!-- END - text typing -->
-
-    </div>
-    <!-- END -->
-
-    <!-- part two -> educational details -->
-    <div id="education"
-        class="container container d-flex text-center flex-column justify-content-center align-items-center py-3 border-bottom">
-        <div class="row g-3">
-            <div class="col-md-12 my-3 text-center">
-                <span class="title fs-3 fw-bolder text-uppercase">educational details
-                </span>
-            </div>
-            <div class="col-md-6 px-5 edu-detail">
-                <div class="card  text-capitalize text-center text-white p-3 mx-3 shadow border-0">
-                    <span class="degree"><i class="bi bi-mortarboard-fill fs-5 text-dark"></i> Bacheler's in<span
-                            class="course text-uppercase"> 'Information
-                            Technolgy'</span></span>
-                    <span class="college"><i class="bi bi-buildings-fill fs-5 text-dark"></i> Gobi arts & sience
-                        college</span>
-                    <span class="place"><i class="bi bi-geo-alt-fill fs-5 text-dark"></i> Gobichettipalayam</span>
-                    <span class="percentage"><i class="bi bi-percent fs-5 text-dark"></i> 74 %</span>
-                    <span class="year"><i class="bi bi-calendar3 fs-5 text-dark"></i> 2015 - 18</span>
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark text-white bg-transparent shadow-lg shadow-white fixed-top">
+            <div class="container-fluid px-5">
+                <a class="navbar-brand " href="#">
+                    <img class="hover" src="./src/pngegg.png" alt="" srcset="">
+                    <div class="logo-name d-inline-block fs-6">athya</div>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse ms-auto" id="navbarNav">
+                    <ul class="navbar-nav m-auto">
+                        <li class="nav-item">
+                            <a class="nav-link under-line" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link under-line" href="#">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link under-line" href="#">About</a>
+                        </li>
+                        <!-- <li class="nav-item">
+                            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                        </li> -->
+                    </ul>
+                    <ul class="navbar-nav">
+                        <!-- <li class="nav-item  d-none d-lg-block">
+                            <a class="nav-link" href="#"><i class="fa-brands fa-whatsapp pt-2 ps-4 text-success"></i></a>
+                        </li>
+                        <li class="nav-item  d-none d-lg-block">
+                            <a class="nav-link" href="#"><i class="fa-brands fa-linkedin-in pt-2 px-1 text-primary"></i></a>
+                        </li> -->
+                        <li class="nav-item  d-none d-lg-block">
+                            <a class="nav-link" href="#">
+                                <button onclick="downloadFile()" class="btn btn-sm bg-danger text-white fw-bold"> download cv
+                                    <i class="fa-solid fa-download pt-1 pr-3 text-white"></i>
+                                </button>
+                            </a>
+                        </li>
+                        <!-- <li class="nav-item">
+                            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                        </li> -->
+                    </ul>
                 </div>
             </div>
-            <div class="col-md-6 px-5 edu-detail">
-                <div class="card text-capitalize text-center text-white p-3 mx-3 shadow border-0">
-                    <span class="degree"><i class="bi bi-mortarboard-fill fs-5 text-dark"></i> Master's in<span
-                            class="course text-uppercase"> 'Information
-                            Technolgy'</span></span>
-                    <span class="college"><i class="bi bi-buildings-fill fs-5 text-dark"></i> Gobi arts & sience
-                        college</span>
-                    <span class="place"><i class="bi bi-geo-alt-fill fs-5 text-dark"></i> Gobichettipalayam</span>
-                    <span class="percentage"><i class="bi bi-percent fs-5 text-dark"></i> 72 %</span>
-                    <span class="year"><i class="bi bi-calendar3 fs-5 text-dark"></i> 2018 - 20</span>
-                </div>
-            </div>
+        </nav>
 
-        </div>
-    </div>
-    <!-- END  -->
+        <!-- parent container -->
+        <div class="container-fluid bg-image">
 
-    <!-- skills -->
-    <div id="skill"
-        class="container container d-flex text-center flex-column justify-content-center align-items-center py-3 border-bottom">
-        <div class="row g-3">
-            <div class="col-md-12 my-3 text-center">
-                <span class="title fs-3 fw-bolder text-uppercase">skills</span>
-            </div>
-            <div class="col-md-3"></div>
-            <div class="col-md-6">
-                <span class="div fs-5">HTML 5<i class="bi bi-dot fs-4"></i></span>
-                <span class="div fs-5">CSS 3<i class="bi bi-dot fs-4"></i></span>
-                <span class="div fs-5">Bootsrap 5<i class="bi bi-dot fs-4"></i></span>
-                <span class="div fs-5">Python<i class="bi bi-dot fs-4"></i></span>
-                <span class="div fs-5">Django<i class="bi bi-dot fs-4"></i></span>
-                <span class="div fs-5">javascript<i class="bi bi-dot fs-4"></i></span>
-                <span class="div fs-5">jquery<i class="bi bi-dot fs-4"></i></span>
-                <span class="div fs-5">PHP<i class="bi bi-dot fs-4"></i></span>
-                <span class="div fs-5">MySql<i class="bi bi-dot fs-4"></i></span>
-                <span class="div fs-5">Git</span>
-                <div class="more ms-auto text-primary text-lowercase mt-4"><a class="more" data-bs-toggle="modal"
-                        data-bs-target="#exampleModalskill">detail view<i
-                            class="bi bi-caret-right-fill text-danger  fs-5"></i></a></div>
-            </div>
-            <div class="col-md-3"></div>
+            <!-- home content -->
+            <div class="container pt-5 pt-0-lg">
 
-            <!-- modal fro skills -->
-            <!-- Modal -->
-            <div class="modal fade rounded rounded-0" id="exampleModalskill" tabindex="-1"
-                aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
-                        <div class="modal-header border-bottom-0 pb-0 mb-0">
-                            <h5 class="modal-title">Modal title</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-
-                        <div class="modal-body text-start text-capitalize">
-                            <div class="card-title text-dark text-center my-2 fs-4"><i
-                                    class="bi bi-card-text text-danger fs-4 me-3"></i>skills & certificates
+                <div class="row vh-100">
+                    <div
+                        class="col-12 col-lg-8 order-1 order-lg-0 profile d-flex align-items-center text-center text-lg-start text-white fs-3">
+                        <div class="profile-content">
+                            <h2 class="name fw-bold">Hi, i'm sathiyanthan.</h2>
+                            <hh3 class="text-white">I'm <span class="type-text text-warning"></span></hh3>
+                            <h3></h3>
+                            front-end developer with 1.5 years experience, python full-stack developer.
+                            </h3>
+                            <div class="media mt-4 text-center text-start-lg">
+                                <button class="btn social btn-sm"><a href="https://wa.me/7339529459">
+                                    <i class="hover fa-brands fs-5 fa-whatsapp  text-success"></i></button>
+                                </a>
+                                <button class="btn social btn-sm">
+                                    <i class="hover fa-brands fs-5 fa-linkedin-in text-primary"></i></button>
+                                <button onclick="downloadFile()" class="btn btn-sm bg-danger text-white fw-bold ">Download CV
+                                    <i class="fa-solid fa-download pt-1 pr-3 text-white ms-2"></i></button>
                             </div>
-                            <div class="exp-more text-dark ">-- certification course in python at neelavath software
-                                solutions - six months. </div>
-                            <div class="exp-more text-dark">-- web development course with front end languages - six
-                                months.</div>
-                            <div class="exp-more text-dark">-- graphic designing in photoshop, bharathiyar university -
-                                six months.</div>
                         </div>
-
+                    </div>
+                    <div
+                        class="col-12 col-lg-4 order-0 order-lg-1 profile d-flex justify-content-center align-items-center">
+                        <div class="img-container">
+                            <img src=".//src/PhotoRoom-20230911_003828-02-fococlipping-standard.png"
+                                class="img-thumbnail bg-transparent border-0 " alt="...">
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- End -->
-
-        </div>
-
-    </div>
-    <!-- END -->
-
-    <!-- experience -->
-    <div id="experience"
-        class="container container d-flex text-center flex-column justify-content-center align-items-center py-3 border-bottom">
-        <div class="row g-3">
-            <div class="col-md-12 my-3 text-center">
-                <span class="title fs-3 fw-bolder text-uppercase">professional-experience</span>
-            </div>
-            <div class="col-md-6 px-5 exp-detail">
-                <div class="card  text-capitalize text-center text-white p-3 mx-3 shadow border-0">
-                    <!-- <p class="exp text-capitalize"> working as a web developer at sakthi infra in perundurai,erode for one year. </p> -->
-                    <span class="job text-uppercase">web developer <span class="role">front-end
-                            development</span></span>
-                    <span class="college">sakthi infra</span>
-                    <span class="place">perundhurai, erode</span>
-                    <span class="percentage">one year</span>
-                    <span type="" class="more ms-auto text-primary text-lowercase me-3" data-bs-toggle="modal"
-                        data-bs-target="#exampleModalone">more<i
-                            class="bi bi-caret-right-fill text-danger  fs-5"></i></span>
-                </div>
-            </div>
-
-            <!-- modal fo rexperience first -->
-            <!-- Modal -->
-            <div class="modal fade rounded rounded-0" id="exampleModalone" tabindex="-1"
-                aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
-                        <div class="modal-header border-bottom-0 pb-0 mb-0">
-                            <h5 class="modal-title">Modal title</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-
-                        <div class="modal-body text-start text-capitalize">
-                            <div class="card-title text-dark text-center my-2 fs-4"><i
-                                    class="bi bi-briefcase-fill text-danger fs-4 me-3"></i>Web - Front end developer
-                            </div>
-                            <div class="exp-more text-dark ">-- Working as a front-end developer at sakthi infra,
-                                perundhurai for one year. </div>
-                            <div class="exp-more text-dark">-- inside .net core framework designing and dveloping front
-                                end technologis.</div>
-                            <div class="exp-more text-dark">-- with html, css, bootstrap5, javascript and jquery, c#
-                                languages.</div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-
-            <!-- End -->
-
-
-
-            <div class="col-md-6 px-5 exp-detail">
-                <div class="card  text-capitalize text-center text-white p-3 mx-3 shadow border-0">
-                    <span class="job text-uppercase">python (django) developer <span
-                            class="role text-muted text-lowercase"> Intern</span></span>
-                    <span class="college">neelavath software solutions</span>
-                    <span class="place">coimbatore</span>
-                    <span class="percentage">six months</span>
-                    <span class="more ms-auto text-primary text-lowercase me-3" data-bs-toggle="modal"
-                        data-bs-target="#exampleModaltwo">more<i
-                            class="bi bi-caret-right-fill text-danger  fs-5"></i></span>
-                </div>
-            </div>
-
-            <!-- modal fo rexperience second -->
-            <!-- Modal -->
-            <div class="modal fade rounded rounded-0" id="exampleModaltwo" tabindex="-1"
-                aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
-                        <div class="modal-header border-bottom-0 pb-0 mb-0">
-                            <h5 class="modal-title">Modal title</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-
-                        <div class="modal-body text-start text-capitalize">
-                            <div class="card-title text-dark text-center my-2 fs-4"><i
-                                    class="bi bi-briefcase-fill text-danger fs-4 me-3"></i>python (Django) developer
-                            </div>
-                            <div class="exp-more text-dark ">-- Worked as a intern - python developer in django
-                                framework at Neelavath software solutions,
-                                coimbatore for sixth months. </div>
-                            <div class="exp-more text-dark">-- with html, css, bootstrap5, javascript and jquery
-                                languages.</div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-
-            <!-- End -->
-
-        </div>
-
-    </div>
-    <!-- END -->
-
-    <!-- my works -->
-    <div id="work"
-        class="container container d-flex text-center flex-column justify-content-center align-items-center py-3 ">
-        <div class="row g-3">
-            <div class="col-md-12 my-3 text-center">
-                <span class="works fs-3 fw-bolder text-uppercase">my works</span>
-            </div>
-            <div class="col-md-12">
-                <span class="soon">Loading😎...</span>
-                <div class="spinner-border text-success ms-4" role="status">
-                    <span class="visually-hidden">Loading...</span>
-                </div>
-            </div>
-
-        </div>
-
-    </div>
-    <!-- END -->
-
-    <hr>
-
-    <!-- about me -->
-    <div id="resume" class="bottom">
-        <div class="row text-capitalize g-4 p-5">
-
-            <div class="col-md-6 text-white text-start">
-                <div class="some ps-5 ms-5">
-                    <div class="line">sathiyanathan</div>
-                    <div class="line"><i class="bi bi-telephone-forward-fill me-2 fs-5 text-danger"></i> +91 7339529459
-                    </div>
-                    <div class="line"><i class="bi bi-linkedin fs-5 me-2 text-info"></i><a class="c-detail"
-                            href="https://www.linkedin.com/in/sathyasathyanathan/">linkedin</a></div>
-                    <div class="line"><i class="bi bi-whatsapp fs-5 me-2 text-success"></i><a class="c-detail"
-                            href="https://wa.me/917339529459">Whatsapp</a></div>
-                    <!-- <div class="line">web developer</div> -->
-                </div>
-            </div>
-
-            <div class="col-md-6 d-flex justify-content-center align-content-center p-5">
-                <span class="resume">
-                    <a id="download" class="download btn btn-sm btn-primary text-white"><i
-                            class="bi bi-file-earmark-arrow-down-fill text-dark pe-1 border-end fs-5 fw-bold"></i>
-                        Download Resume
-                    </a>
-                </span>
-            </div>
-
-            <div class="col-md-12 text-center">
-                <span class="text-danger fs-6fw-light">this site is in under development ! 😁</span>
-                <div class="div my-3 fw-normal"><i class="bi bi-c-circle"></i> sathiyanathan 2023</div>
             </div>
 
         </div>
     </div>
 
-    <!-- END -->
 
 
-    <!-- bts5 js -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+    <!-- particle js cdn -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <!-- font awasome icons -->
+    <script src="https://kit.fontawesome.com/40459dc74b.js" crossorigin="anonymous"></script>
+    <!-- jquery cdn -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        'use strict';
 
-    <!-- jquery CDn -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        const type = document.querySelector('.type-text');
 
-    <!-- typed jquery plugin -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.4/typed.min.js"></script>
+        let listTexts = ['front-end developer,', 'python full-stack developer', 'freelancer'];
 
-    <!-- custom js -->
-    <script src="script.js"></script>
+        let index = -1;
+        let current = 0;
 
+        function typeTextFunc() {
+            if (current === listTexts.length) {
+                current = 0;
+            }
+            let typeText = setInterval(() => {
+                if (index == listTexts[current].length - 1) {
+                    clearInterval(typeText);
+                    clearTextFunc();
+                } else {
+                    index++;
+                    type.textContent += listTexts[current][index];
+                }
+            }, 150);
+        };
 
+        function clearTextFunc() {
+            let clearText = setInterval(() => {
+                if (type.textContent.length == 0) {
+                    clearInterval(clearText);
+                    index = -1;
+                    current++
+                    typeTextFunc();
+                } else {
+                    type.textContent = type.textContent.slice(0, -1)
+                }
+            }, 150);
+        };
+
+        typeTextFunc();
+
+        // particle js
+        particlesJS('particles-js', {
+            "particles": {
+                "number": {
+                    "value": 80, // Adjust the number of particles as needed
+                    "density": {
+                        "enable": true,
+                        "value_area": 800
+                    }
+                },
+                "color": {
+                    "value": "#000000" // Color of the particles
+                },
+                "shape": {
+                    "type": "line",
+                    "stroke": {
+                        "width": 2,
+                        "color": "#ffffff"
+                    },
+                    "polygon": {
+                        "nb_sides": 6 // Number of sides to create a hexagon shape
+                    }
+                },
+                "opacity": {
+                    "value": 0.5,
+                    "random": false
+                },
+                "size": {
+                    "value": 5,
+                    "random": true
+                },
+                "line_linked": {
+                    "enable": true,
+                    "distance": 150,
+                    "color": "#ffffff",
+                    "opacity": 0.4,
+                    "width": 2
+                },
+                "move": {
+                    "enable": true,
+                    "speed": 3,
+                    "direction": "none",
+                    "random": false,
+                    "straight": false,
+                    "out_mode": "out",
+                    "bounce": false
+                }
+            },
+            "interactivity": {
+                "events": {
+                    "onhover": {
+                        "enable": false
+                    }
+                }
+            }
+        });
+
+        // download cv
+        function downloadFile() {
+            window.location.href = "sathiyanathan_CV.pdf";
+        }
+
+    </script>
 
 </body>
 

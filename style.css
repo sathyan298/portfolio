@@ -1,225 +1,127 @@
-/* google font */
-@import url('https://fonts.googleapis.com/css?family=Work+Sans');
-
 body {
-    font-family: 'Work Sans', sans-serif;
-    font-weight: 800;
-    background: #2980B9;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9);
-    color: #fff !important;
-    overflow-x: hidden !important;
-    scroll-behavior: smooth !important;
+  background-color: black !important;
+  background-size: auto 100% 100%;
+  background-repeat: no-repeat;
+  color: white;
+  font-family: monospace !important;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
 
-/* hide scrollbar */
+/* scro bar */
 body::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
 
-/* profile pic */
-img {
-    width: 100px !important;
-    height: 100px !important;
+/* nav-bar */
+.navbar {
+  background-color: white !important;
+  backdrop-filter: blur(2px);
 }
 
-/* nav name */
-.nav-name {
-    color: #7844e9 !important;
+/* icon */
+.navbar-brand img {
+  height: 40px;
 }
 
-/* home button */
-.back-to-top{
-    right: 0;
-    bottom: 0;
-    position: fixed;
-    cursor: pointer;
+.navbar-brand img:hover,
+.hover:hover {
+  transform: scale(1.1);
+  /* animation: balloon 15s infinite linear; */
 }
 
-/* contact */
-/* .contact {
-    letter-spacing: normal;
-} */
-
-/* navbar link underline aimation */
-.nav-link {
-    color: grey;
-    text-transform: uppercase;
-    /* text-decoration: none; */
-    letter-spacing: 0.15em;
-    /* display: inline-block; */
-    padding: 15px 20px;
-    position: relative;
-    cursor: pointer;
+.under-line:hover {
+  border-bottom: 2px solid #bdba17 !important;
 }
 
-.nav-link:after {
-    background: none repeat scroll 0 0 transparent;
-    bottom: 10;
-    content: "";
-    display: block;
-    height: 3px;
-    left: 50%;
-    position: absolute;
-    background: #fff;
-    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+.profile-content {
+  line-height: 50px;
 }
 
-.nav-link:hover:after {
-    width: 100%;
-    left: 0;
+/* profile-image */
+.img-container {
+  position: relative;
 }
 
-@media screen and (max-height: 300px) {
-    ul {
-        margin-top: 40px;
-    }
+.img-container img {
+  max-width: 100%;
+  height: auto;
+  transition: transform 0.3s;
 }
 
-.container {
-    min-height: 700px;
+.img-thumbnail:hover {
+  transform: scale(1.1);
 }
 
-/* typing txt */
-#intro {
-    font-family: 'Work Sans', sans-serif;
-    font-size: xx-large;
-    font-weight: bold;
-    color: black;
-    letter-spacing: 5px;
+.img-thumbnail {
+  height: 350px !important;
 }
 
-.typed-cursor {
-    visibility: hidden !important;
-}
-
-/* name text */
-.more-txt {
-    color: #f9bb16;
-}
-
-/* title */
-.title,
-#intro {
-    color: #123C69;
+.social {
+  border-radius: 50% !important;
+  background-color: rgb(207, 228, 235) !important;
 }
 
 
-/* side navbar */
-.sidenav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    right: 0;
-    background-color: #123C69;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
+h1 {
+  color: #dbde2b;
+  /* font-size: 10px; */
+  font-family: monospace;
+}
+
+.type-text {
+  position: relative;
+}
+
+.type-text::after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: -5px;
+  top: 0;
+  height: 100%;
+  width: 2px;
+  background-color: #ffffff;
+  animation: type 0.5s infinite;
+  -webkit-animation: type 0.5s infinite;
+}
+
+@-webkit-keyframes type {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes type {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 0;
+  }
 }
 
 
-
-.openbtn {
-    font-size: 30px;
-    cursor: pointer;
-}
-
-.sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 15px;
-    color: #ffffff;
-    display: block;
-    transition: 0.3s;
-    line-height: 50px;
-}
-
-.sidenav a:hover {
-    color: #f1f1f1;
-}
-
-.sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 10px;
-    margin-left: 50px;
-    line-height: 50px;
-
-}
-
-@media screen and (max-height: 450px) {
-    .sidenav {
-        padding-top: 15px;
-    }
-
-    .sidenav a {
-        font-size: 10px;
-    }
-}
-
-/* open button */
-.bi-three-dots-vertical {
-    font-size: larger;
-    position: fixed;
-}
-
-/* close button */
-.bi-x-lg {
-    font-size: x-large;
-}
-
-/* down arrow */
-.go-down:hover {
-    color: #123C69 !important;
-    cursor: pointer;
-}
-
-/* card */
-.card {
-    line-height: 35px !important;
-    border-radius: 0 !important;
-    background: linear-gradient(90deg, hsla(339, 100%, 55%, 1) 0%, hsla(197, 100%, 64%, 1) 100%);
-}
-
-/* course */
-.edu-detail {
-    line-height: 30px;
-}
-
-/* hypen */
-.hypen {
-    color: #f9bb16;
-}
-
-.works {
-    color: #003166 !important;
-}
-
-/* about me */
-.bottom {
-    min-height: 200px !important;
-}
-
-/* contact detail */
-.c-detail,
-.more {
-    text-decoration: solid;
-    cursor: pointer !important;
-}
-
-/* modal */
-.modal-content {
-    border-radius: 0 !important;
-}
-
-.modal-body {
-    line-height: 40px !important;
-}
-
-/* resume sownload */
-.resume {
-    cursor: pointer !important;
+/* particle js */
+#particles-js {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -10;
+  width: 100%;
+  height: 100%;
 }
